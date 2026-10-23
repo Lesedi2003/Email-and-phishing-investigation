@@ -5,3 +5,9 @@ This is the Scenario
 For the Beginning of the investigation, I downloaded the file that contained the email details of the email with its encrypted message. 
 ![Email Overview1](LABSCREENSHOTS/1.email_details_1.png)
 ![Email Overview2](LABSCREENSHOTS/2.email_details_2.png)
+
+
+Investigated where the email came from by looking at the Delivered To, Received From, The subject and every other detail that shows on the email.
+
+To Continue using the Investigation, as it says on the email that the contents of the email "Content-Transfer-Encoding: base64" , the base64 tells me that message is in base64 format, so i used a website called CyberChef to paste and decode the first part of the email 
+
