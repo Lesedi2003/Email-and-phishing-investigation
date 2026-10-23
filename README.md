@@ -38,3 +38,6 @@ It was a base64 encoded string.
 ![First Sheet in Excel](LABSCREENSHOTS/10.FirstSheet.png)
 ![Second Sheet Base64 String](LABSCREENSHOTS/11.SecondSheetBase64String.png)
 
+I went back to the CyberChef to check the base64 encoded String to what it said, 
+
+
