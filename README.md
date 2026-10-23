@@ -44,3 +44,4 @@ I went back to the CyberChef to check the base64 encoded String to what it said 
 
 I thought i would be cool to get the Author or potentionl Author pf the attacker. I dowloaded an App called ExifTool to get the metadata of the files and thats how i found the name of the attacker. 
 
+![Metadata](LABSCREENSHOTS/13.Metadata.png)
