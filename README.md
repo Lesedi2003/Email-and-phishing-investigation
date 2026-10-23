@@ -17,6 +17,10 @@ The person that sent the email cleraly staes in the decoded message that he has 
 
 ![SecondMessage decoded](LABSCREENSHOTS/4.CyberChef_Decoder2.png)
 
-The screenshot shows the bits of the second mesage, and the fisrt 4 bits of a file show us the file signature/magic number or file header. I then took the file header and went to a website called GaryKessler.net to check for the bits file extention, though the email saysthat the file is in pdf, we cant take that as it is, as it  can spoofed. so i went to garyKesslers email and found hat the file is infact not a pdf format but a  Zip File. 
+The screenshot shows the bits of the second mesage, and the fisrt 4 bits of a file show us the file signature/magic number or file header. I then took the file header and went to a website called GaryKessler.net to check for the bits file extention, though the email saysthat the file is in pdf, we cant take that as it is, as it  can spoofed. so i went to garyKesslers email and found hat the file is infact not a pdf format but a  Zip File as shown i the screenshot below.
 
-![Zip_File_Hex]()
+![Zip_File_Hex](LABSCREENSHOTS/5.ZipFileKessler.png)
+
+Went on to serach for a file extention in the very same signature seach in GaryKesslerss website, that is PDF to find the HEX digits of that PDF file. 
+
+![PDF File Hex]()
