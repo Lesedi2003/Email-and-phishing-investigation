@@ -4,4 +4,4 @@ This is the Scenario
 
 For the Beginning of the investigation, I downloaded the file that contained the email details of the email with its encrypted message. 
 ![Email Overview1](LABSCREENSHOTS/1.email_details_1.png)
-![Email Overview2](LABSCREENSHOTS/1.email_details_2.png)
+![Email Overview2](LABSCREENSHOTS/2.email_details_2.png)
