@@ -17,14 +17,25 @@ The person that sent the email cleraly staes in the decoded message that he has 
 
 ![SecondMessage decoded](LABSCREENSHOTS/4.CyberChef_Decoder2.png)
 
-The screenshot shows the bits of the second mesage, and the fisrt 4 bits of a file show us the file signature/magic number or file header. I then took the file header and went to a website called GaryKessler.net to check for the bits file extention, though the email saysthat the file is in pdf, we cant take that as it is, as it  can spoofed. so i went to garyKesslers email and found hat the file is infact not a pdf format but a  Zip File as shown i the screenshot below. It being a ZIP file, i dowloaded it and kept it as  a ZIp file
+The screenshot shows the bits of the second mesage, and the fisrt 4 bits of a file show us the file signature/magic number or file header. I then took the file header and went to a website called GaryKessler.net to check for the bits file extention, though the email saysthat the file is in pdf, we cant take that as it is, as it  can spoofed. so i went to garyKesslers email and found hat the file is infact not a pdf format but a  Zip File as shown i the screenshot below. It being a ZIP file, i downloaded it and found 3 files inside. 
+
 ![Zip_File_Hex](LABSCREENSHOTS/5.ZipFileKessler.png)
 
-Open my ZIP File and to find 3 file, and an excel file. 
+Went back to my ZIP file to find out what kind of files they are. i downloaded a tool called HxD to fond the Hex values of the files. Went back to The File Signature website(Gary kessler) to check the first 4 didgts that the HxD gave me to check what the extention of the files are, the first one was a JPEG file that was a crown.
+
+![JPEG File Extension]()
 
 
 Went on to serach for a file extention in the very same signature seach in GaryKesslerss website, that is PDF to find the HEX digits of that PDF file. 
 
+
+
 ![PDF File Hex](LABSCREENSHOTS/6PDFHEXFile.png)
 
-Went back to
+
+
+
+
+
+The first file was a picture of a crown a
+
