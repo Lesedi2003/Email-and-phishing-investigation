@@ -1,6 +1,6 @@
-🕵️‍♀️ The Planet's Prestige — Email Phishing Investigation
+#🕵️‍♀️ The Planet's Prestige — Email Phishing Investigation
 
-🌍 Lab Scenario
+##🌍 Lab Scenario
 
 CoCanDa, a planet known as "The Heaven of the Universe," has been experiencing a difficult period. A series of riots has broken out due to the frequent abduction of its citizens, known as CoCanDians, by a mysterious force.
 CoCanDa's Planetary President organised a war room with leading experts and military officials to find a solution. Shortly after the meeting, the President was informed that his daughter had disappeared.
@@ -9,7 +9,7 @@ On the third day, a CoCanDa representative, an Army Major stationed on Earth, re
 
 My task was to investigate the email, analyse its contents, examine the attached files, and uncover information that could help move the investigation forward.
 
-📧 1. Initial Email Examination
+##📧 1. Initial Email Examination
 To begin the investigation, I downloaded the file containing the email details and its encoded message.
 
 
