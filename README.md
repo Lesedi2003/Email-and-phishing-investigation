@@ -35,5 +35,6 @@ Found that the second second file was pdf file that had further instructions on 
 The Instructions included me having to go into the excel file. The excel file had 2 sheets, the second sheet was just blank, i had to clear formats in excel to see excatly was was written. 
 It was a base64 encoded string. 
 
-
+![First Sheet in Excel]()
+![Second Sheet Base64 String]()
 
