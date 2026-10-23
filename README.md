@@ -9,6 +9,8 @@ For the Beginning of the investigation, I downloaded the file that contained the
 
 Investigated where the email came from by looking at the Delivered To, Received From, The subject and every other detail that shows on the email.
 
-To Continue using the Investigation, as it says on the email that the contents of the email "Content-Transfer-Encoding: base64" , the base64 tells me that message is in base64 format, so i used a website called CyberChef to paste and decode the first part of the email 
+To Continue using the Investigation, as it says on the email that the contents of the email "Content-Transfer-Encoding: base64" , the base64 tells me that message is in base64 format, so i used a website called CyberChef to paste and decode the first part of the email and used "From base64" to decode it.
 
-![FirstMessage_decoded](
+![FirstMessage_decoded](LABSCREENSHOTS/3.CyerChef_Decoder.png)
+
+The person that sent the email cleraly staes in the decoded message that he has sent an attachment for us to continue investing. so i went and decoded the second message, also in the same site, the CyberChef website and things were a little bit different there, the "base64 decoder didntwork, so i tried the other decodrs, tried the "To Hex" and it gave me the bits. 
