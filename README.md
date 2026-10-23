@@ -1,47 +1,90 @@
-I have Completed a lab on Blue Teams Labs Online, on Email Phishing, the Lab is called The Planet's Prestige. 
-This is the Scenario 
-"CoCanDa, a planet known as 'The Heaven of the Universe' has been having a bad year. A series of riots have taken place across the planet due to the frequent abduction of citizens, known as CoCanDians, by a mysterious force. CoCanDa’s Planetary President arranged a war-room with the best brains and military leaders to work on a solution. After the meeting concluded the President was informed his daughter had disappeared. CoCanDa agents spread across multiple planets were working day and night to locate her. Two days later and there’s no update on the situation, no demand for ransom, not even a single clue regarding the whereabouts of the missing people. On the third day a CoCanDa representative, an Army Major on Earth, received an email."
+🕵️‍♀️ The Planet's Prestige — Email Phishing Investigation
 
-For the Beginning of the investigation, I downloaded the file that contained the email details of the email with its encrypted message. 
+🌍 Lab Scenario
+
+CoCanDa, a planet known as "The Heaven of the Universe," has been experiencing a difficult period. A series of riots has broken out due to the frequent abduction of its citizens, known as CoCanDians, by a mysterious force.
+CoCanDa's Planetary President organised a war room with leading experts and military officials to find a solution. Shortly after the meeting, the President was informed that his daughter had disappeared.
+Agents were deployed across multiple planets to investigate the disappearances. However, after two days, there were no updates, ransom demands, or clues regarding the whereabouts of the missing citizens.
+On the third day, a CoCanDa representative, an Army Major stationed on Earth, received an email.
+
+My task was to investigate the email, analyse its contents, examine the attached files, and uncover information that could help move the investigation forward.
+
+📧 1. Initial Email Examination
+To begin the investigation, I downloaded the file containing the email details and its encoded message.
+
+
 ![Email Overview1](LABSCREENSHOTS/1.email_details_1.png)
 ![Email Overview2](LABSCREENSHOTS/2.email_details_2.png)
 
+I examined the available email information, including the Delivered To, Received From, subject line, and other email header details. This helped me investigate the email's origin and understand how it had been delivered.
 
-Investigated where the email came from by looking at the Delivered To, Received From, The subject and every other detail that shows on the email.
+🔓 2. Decoding the First Email Message Using CyberChef
 
-To Continue using the Investigation, as it says on the email that the contents of the email "Content-Transfer-Encoding: base64" , the base64 tells me that message is in base64 format, so i used a website called CyberChef to paste and decode the first part of the email and used "From base64" to decode it.
+While examining the email, I noticed the following header:
+Content-Transfer-Encoding: base64
+This indicated that the relevant email content was encoded in Base64 format. To make the message readable, I used CyberChef and selected the From Base64 operation to decode the first part of the email.
 
 ![FirstMessage_decoded](LABSCREENSHOTS/3.CyerChef_Decoder.png)
 
-The person that sent the email cleraly staes in the decoded message that he has sent an attachment for us to continue investing. so i went and decoded the second message, also in the same site, the CyberChef website and things were a little bit different there, the "base64 decoder didntwork, so i tried the other decodrs, tried the "To Hex" and it gave me the bits. 
+After decoding the message, I discovered that the sender explicitly mentioned an attachment that would provide further information for the investigation.
+This clue led me to investigate the second encoded message.
+
+🧩 3. Investigating the Second Message and Identifying the File Type
+
+I returned to CyberChef to decode the second message. However, the From Base64 operation did not produce the expected result.
+I then tried a different approach by converting the data to hexadecimal using the To Hex operation. This allowed me to examine the underlying bytes of the data.
 
 ![SecondMessage decoded](LABSCREENSHOTS/4.CyberChef_Decoder2.png)
 
-The screenshot shows the bits of the second mesage, and the fisrt 4 bits of a file show us the file signature/magic number or file header. I then took the file header and went to a website called GaryKessler.net to check for the bits file extention, though the email saysthat the file is in pdf, we cant take that as it is, as it  can spoofed. so i went to garyKesslers email and found hat the file is infact not a pdf format but a  Zip File as shown i the screenshot below. It being a ZIP file, i downloaded it and found 3 files inside. 
+The hexadecimal representation provided an important clue. A file's signature, also known as its magic number or file header, can help identify its actual format.
+Although the email indicated that the file was a PDF, I did not assume that the stated format was correct. File extensions and descriptions can be misleading, so I needed to verify the file type independently.
+I copied the relevant hexadecimal signature and consulted Gary Kessler's File Signature Table to identify the corresponding file format.
+The investigation revealed that the file was actually a ZIP archive, rather than a standalone PDF file.
+After identifying the ZIP archive, I proceeded to examine its contents to discover what additional information it contained.
 
 ![Zip_File_Hex](LABSCREENSHOTS/5.ZipFileKessler.png)
 
-Went back to my ZIP file to find out what kind of files they are. i downloaded a tool called HxD to fond the Hex values of the files. Went back to The File Signature website(Gary kessler) to check the first 4 didgts that the HxD gave me to check what the extention of the files are, the first one was a JPEG file that was a crown.
 
+🗂️ 4. Examining the Files Inside the ZIP Archive
+After extracting the ZIP archive, I discovered three files that required further investigation.
+To identify the actual formats of these files, I downloaded and used HxD, a hexadecimal editor that allows me to inspect a file's underlying hexadecimal data.
+I examined the file signatures and compared them with the entries in Gary Kessler's File Signature Table. This helped me identify the file types based on their signatures rather than relying solely on their extensions.
+
+🖼️ File 1: JPEG Image
+The first file was identified as a JPEG image. After examining the file, I discovered that the image depicted a crown.
 ![JPEG File Extension](LABSCREENSHOTS/7.JPEGFile.png)
 ![JPEG File Extension](LABSCREENSHOTS/8.JPEGCrown.png)
 
-Went on to serach for a file extention in the very same signature seach in GaryKesslerss website, that is PDF to find the HEX digits of that PDF file. 
-Found that the second second file was pdf file that had further instructions on finding the daughter
+
+📄 File 2: PDF Document
+To investigate the second file, I referred to the PDF file signature listed in Gary Kessler's File Signature Table and compared it with the hexadecimal data obtained using HxD.
+The analysis confirmed that the second file was a PDF document. After opening it, I discovered further instructions explaining how to continue the investigation into the missing daughter.
+The instructions directed me to examine the Excel workbook included in the archive.
 
 ![PDF File Hex](LABSCREENSHOTS/6PDFHEXFile.png)
 ![PDF Further Instruction](LABSCREENSHOTS/9.Futher_InstructionsPDF.png)
 
-The Instructions included me having to go into the excel file. The excel file had 2 sheets, the second sheet was just blank, i had to clear formats in excel to see excatly was was written. 
-It was a base64 encoded string. 
+📊 5. Investigating the Excel Workbook
+I opened the Excel workbook and discovered that it contained two worksheets. The second worksheet initially appeared blank, making it difficult to determine whether it contained any useful information.
+I investigated the worksheet further and used Excel's Clear Formats feature to remove the existing cell formatting. This revealed content that had not been clearly visible before.
+The revealed content was a Base64-encoded string.
 
 ![First Sheet in Excel](LABSCREENSHOTS/10.FirstSheet.png)
 ![Second Sheet Base64 String](LABSCREENSHOTS/11.SecondSheetBase64String.png)
 
-I went back to the CyberChef to check the base64 encoded String to what it said to further investigate
-
+🔍 6. Decoding the Excel Message
+After discovering the Base64-encoded string in the Excel workbook, I returned to CyberChef to decode it using the From Base64 operation.
 ![Excel Base64 Decoded](LABSCREENSHOTS/12.ExcelBase64.png)
+Decoding the string allowed me to reveal the hidden message and obtain further information relevant to the investigation.
+This step demonstrated the importance of examining documents carefully, particularly when their contents may be concealed through formatting or encoded text.
 
-I thought i would be cool to get the Author or potentionl Author pf the attacker. I dowloaded an App called ExifTool to get the metadata of the files and thats how i found the name of the attacker. 
+🧾 7. Extracting File Metadata Using ExifTool
+As an additional step in my investigation, I decided to examine the metadata associated with the files to look for clues about their possible author.
+I downloaded and used ExifTool, a tool that extracts and displays metadata from various file formats.
+By examining the file metadata, I found a name associated with the file that could provide a potential clue about the person responsible for creating it
 
 ![Metadata](LABSCREENSHOTS/13Metadata.png)
+
+This was an additional investigative step beyond simply decoding the messages and identifying the file formats. However, a name found in metadata should be treated as a potential lead rather than definitive proof of an attacker's identity
+
+
