@@ -15,4 +15,8 @@ To Continue using the Investigation, as it says on the email that the contents o
 
 The person that sent the email cleraly staes in the decoded message that he has sent an attachment for us to continue investing. so i went and decoded the second message, also in the same site, the CyberChef website and things were a little bit different there, the "base64 decoder didntwork, so i tried the other decodrs, tried the "To Hex" and it gave me the bits. 
 
-![SecondMessage decoded](
+![SecondMessage decoded](LABSCREENSHOTS/4.CyberChef_Decoder2.png)
+
+The screenshot shows the bits of the second mesage, and the fisrt 4 bits of a file show us the file signature/magic number or file header. I then took the file header and went to a website called GaryKessler.net to check for the bits file extention, though the email saysthat the file is in pdf, we cant take that as it is, as it  can spoofed. so i went to garyKesslers email and found hat the file is infact not a pdf format but a  Zip File. 
+
+![Zip_File_Hex]()
