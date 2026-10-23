@@ -23,14 +23,14 @@ The screenshot shows the bits of the second mesage, and the fisrt 4 bits of a fi
 
 Went back to my ZIP file to find out what kind of files they are. i downloaded a tool called HxD to fond the Hex values of the files. Went back to The File Signature website(Gary kessler) to check the first 4 didgts that the HxD gave me to check what the extention of the files are, the first one was a JPEG file that was a crown.
 
-![JPEG File Extension]()
-
+![JPEG File Extension](LABSCREENSHOTS/7.JPEGFile.png)
+![JPEG File Extension](LABSCREENSHOTS/8.JPEGCrown.png)
 
 Went on to serach for a file extention in the very same signature seach in GaryKesslerss website, that is PDF to find the HEX digits of that PDF file. 
-
-
+Found that the second second file was pdf file that had further instructions on finding the daughter
 
 ![PDF File Hex](LABSCREENSHOTS/6PDFHEXFile.png)
+![JPEG File Extension](LABSCREENSHOTS/7.JPEGFile.png)
 
 
 
