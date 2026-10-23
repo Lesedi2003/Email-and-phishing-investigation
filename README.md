@@ -40,4 +40,7 @@ It was a base64 encoded string.
 
 I went back to the CyberChef to check the base64 encoded String to what it said to further investigate
 
-![]()
+![Excel Base64 Decoded](LABSCREENSHOTS/12.ExcelBase64.png)
+
+I thought i would be cool to get the Author or potentionl Author pf the attacker. I dowloaded an App called ExifTool to get the metadata of the files and thats how i found the name of the attacker. 
+
