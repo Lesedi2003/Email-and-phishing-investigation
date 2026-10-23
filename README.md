@@ -36,5 +36,5 @@ The Instructions included me having to go into the excel file. The excel file ha
 It was a base64 encoded string. 
 
 ![First Sheet in Excel](LABSCREENSHOTS/10.FirstSheet.png)
-![Second Sheet Base64 String]()
+![Second Sheet Base64 String](LABSCREENSHOTS/11.SecondSheetBase64String.png)
 
