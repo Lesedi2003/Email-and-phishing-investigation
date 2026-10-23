@@ -11,3 +11,4 @@ Investigated where the email came from by looking at the Delivered To, Received 
 
 To Continue using the Investigation, as it says on the email that the contents of the email "Content-Transfer-Encoding: base64" , the base64 tells me that message is in base64 format, so i used a website called CyberChef to paste and decode the first part of the email 
 
+![FirstMessage_decoded](
