@@ -49,10 +49,10 @@ After identifying the ZIP archive, I proceeded to examine its contents to discov
 After extracting the ZIP archive, I discovered three files that required further investigation.
 To identify the actual formats of these files, I downloaded and used HxD, a hexadecimal editor that allows me to inspect a file's underlying hexadecimal data.
 I examined the file signatures and compared them with the entries in Gary Kessler's File Signature Table. This helped me identify the file types based on their signatures rather than relying solely on their extensions.
+![JPEG File Extension](LABSCREENSHOTS/7.JPEGFile.png)
 
 ### 🖼️ File 1: JPEG Image
 The first file was identified as a JPEG image. After examining the file, I discovered that the image depicted a crown.
-![JPEG File Extension](LABSCREENSHOTS/7.JPEGFile.png)
 ![JPEG File Extension](LABSCREENSHOTS/8.JPEGCrown.png)
 
 
@@ -87,4 +87,53 @@ By examining the file metadata, I found a name associated with the file that cou
 
 This was an additional investigative step beyond simply decoding the messages and identifying the file formats. However, a name found in metadata should be treated as a potential lead rather than definitive proof of an attacker's identity
 
+## 🎓 What I Learned
 
+Completing this lab helped me develop a better understanding of how to investigate suspicious emails and examine files that may contain hidden information.
+
+Key lessons from this investigation include:
+
+Email analysis: How to examine email headers and review available delivery and sender information when investigating a suspicious email.
+Base64 decoding: How to recognise Base64-encoded content and decode it using CyberChef.
+File signature analysis: Why it is important to verify a file's actual format rather than trusting its extension or the description provided in an email.
+Hexadecimal analysis: How to inspect a file's underlying bytes and use hexadecimal signatures to help identify file formats.
+Archive investigation: How to examine an extracted ZIP archive and investigate its individual files.
+Document investigation: How to follow investigative clues across PDF documents, Excel worksheets, and image files.
+Hidden content discovery: How spreadsheet formatting can obscure visible content and why documents should be examined carefully.
+Metadata analysis: How to extract file metadata using ExifTool and identify potential investigative leads.
+Evidence-based investigation: Why findings should be supported by evidence and why metadata alone cannot conclusively establish attribution.
+Analytical thinking: How to adapt my approach when an initial decoding method does not work as expected and follow clues across multiple files.
+
+🛠️ Tools Used
+
+Tool                                    Purpose
+
+CyberChef                               Decoding Base64-encoded messages and converting data into hexadecimal representation.
+HxD                                     Inspecting hexadecimal data and examining file signatures.
+Gary Kessler's File Signature Table     Comparing file signatures to identify file formats.
+Microsoft Excel                         Examining worksheets and revealing content obscured by cell formatting.
+ExifTool                                Extracting and examining file metadata.
+
+## 💻 Skills Gained
+
+Through this hands-on lab, I practised the following skills:
+Email phishing investigation and initial email triage.
+Email header examination.
+Base64 decoding and data transformation.
+Hexadecimal data inspection.
+File signature identification and file type verification.
+ZIP archive and extracted-file investigation.
+PDF, JPEG, and Excel document examination.
+Discovery of visually obscured spreadsheet content.
+File metadata extraction and preliminary attribution analysis.
+Use of multiple investigative tools to follow evidence across different file types.
+Technical documentation and investigative reporting.
+
+## ✅ Conclusion
+
+The Planet's Prestige lab gave me practical experience investigating a suspicious email and following a series of clues through encoded messages, file signatures, extracted documents, spreadsheet content, and file metadata.
+It reinforced the importance of not making assumptions based on file extensions, adapting investigative techniques when an initial approach does not work, and using multiple tools to uncover information.
+
+Lab platform: Blue Team Labs Online (BTLO)
+Lab name: The Planet's Prestige
+Investigation focus: Email phishing analysis and file investigation
